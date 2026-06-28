@@ -228,7 +228,7 @@ function HelpSection() {
           <div className="help-card">
             <div className="help-card-image">
               <img
-                src="/assets/images/help-host.jpg"
+                src="/assets/images/host.png"
                 alt="Host a Cohort"
               />
             </div>
@@ -242,7 +242,7 @@ function HelpSection() {
           <div className="help-card">
             <div className="help-card-image">
               <img
-                src="/assets/images/help-volunteer.jpg"
+                src="/assets/images/volunteer.png"
                 alt="Volunteer"
               />
             </div>
@@ -258,7 +258,7 @@ function HelpSection() {
           <div className="help-card">
             <div className="help-card-image">
               <img
-                src="/assets/images/help-partner.jpg"
+                src="/assets/images/partner.png"
                 alt="Partner"
               />
             </div>

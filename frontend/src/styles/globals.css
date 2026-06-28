@@ -675,106 +675,165 @@ body {
         font-size: 2.8rem;
     }
 }
-
-/* HELP SECTION */
+/* ==========================================
+   HELP SECTION
+========================================== */
 .help-section {
-    padding: 130px 0;
-    background: #f7f7f7;
+    padding: 120px 0;
+    background: #f8f8f8;
 }
 
+/* HEADER */
 .help-header {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 .help-subtitle {
-    font-family: 'Caveat', cursive;
-    color: #6ba94d;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    color: #2D8B84;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .help-subtitle i {
-    margin-right: 10px;
+    font-size: 14px;
 }
 
 .help-header h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
-    color: #111;
+    color: #1d3563;
     margin-bottom: 20px;
 }
 
 .help-description {
-    font-size: 1.2rem;
-    color: #444;
-    max-width: 700px;
-    margin: auto;
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
     line-height: 1.8;
 }
 
+/* GRID */
 .help-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 28px;
+    gap: 30px;
 }
 
+/* CARD */
 .help-card {
     background: white;
-    border-radius: 28px;
-    padding: 18px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
-    transition: all 0.35s ease;
+    border-radius: 24px;
+    padding: 20px;
+    transition: all 0.45s ease;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.help-card:hover {
-    transform: translateY(-10px);
-}
-
+/* IMAGE WRAPPER */
 .help-card-image {
-    margin-bottom: 25px;
+    width: 100%;
+    height: 240px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
 }
 
+/* IMAGE */
 .help-card-image img {
     width: 100%;
-    height: 190px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 22px;
+    transition: transform 0.55s ease;
 }
 
+/* CONTENT */
 .help-card h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #111;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1d3563;
     margin-bottom: 15px;
+    line-height: 1.4;
 }
 
 .help-card p {
-    font-size: 1rem;
     color: #444;
-    line-height: 1.8;
+    line-height: 1.7;
     margin-bottom: 25px;
+    flex-grow: 1;
 }
 
+/* BUTTON */
 .help-btn {
-    display: inline-block;
-    padding: 12px 28px;
-    border: 2px solid #2D8B84;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
     border-radius: 40px;
-    color: #2D8B84;
-    text-decoration: none;
+    border: 2px solid #1d3563;
+    color: #1d3563;
     font-weight: 600;
+    text-decoration: none;
     transition: all 0.3s ease;
+    width: fit-content;
 }
 
+/* BUTTON NORMAL HOVER */
 .help-btn:hover {
-    background: #2D8B84;
+    background: #1d3563;
     color: white;
 }
 
+/* CARD HOVER */
+.help-card:hover {
+    background: #2D8B84;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+/* IMAGE EXPANDS ON HOVER */
+.help-card:hover .help-card-image img {
+    transform: scale(1.12);
+}
+
+/* TEXT STAYS VISIBLE */
+.help-card:hover h3 {
+    color: #1d3563;
+}
+
+.help-card:hover p {
+    color: white;
+}
+
+/* BUTTON INSIDE ACTIVE CARD */
+.help-card:hover .help-btn {
+    border-color: white;
+    color: white;
+    background: transparent;
+}
+
+/* BUTTON SECONDARY HOVER */
+.help-card:hover .help-btn:hover {
+    background: #1d3563;
+    border-color: #1d3563;
+    color: white;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
 @media (max-width: 992px) {
     .help-cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .help-header h2 {
@@ -786,5 +845,20 @@ body {
     .help-cards {
         grid-template-columns: 1fr;
     }
-}
 
+    .help-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .help-description {
+        font-size: 16px;
+    }
+
+    .help-card {
+        padding: 18px;
+    }
+
+    .help-card-image {
+        height: 220px;
+    }
+}
