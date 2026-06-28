@@ -6,17 +6,35 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+/* Sticky site header wrapper */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
 /* TOP BAR */
 .top-bar {
     background: #d8c6a5;
     padding: 10px 0;
     font-size: 14px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    max-height: 60px;
+}
+
+/* HIDE TOP BAR ON SCROLL */
+.site-header.scrolled .top-bar {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
 }
 
 .top-bar i {
     color: #1f8a84;
     margin-right: 6px;
 }
+
 
 /* SOCIAL */
 .social-box {
