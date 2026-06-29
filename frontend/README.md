@@ -8,7 +8,7 @@
 From the repo root:
 
 ```bash
-cd /home/clifford/Documents/zz/frontend
+cd /DigiTeach/frontend
 npm install
 ```
 
