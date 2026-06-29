@@ -287,7 +287,6 @@ export default function Home() {
       <WhySection />
       <HelpSection />
       <PilotSection />
-      <Footer />
     </div>
   )
 }
