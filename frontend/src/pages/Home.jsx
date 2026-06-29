@@ -1,4 +1,6 @@
 import Hero from '../components/Hero.jsx'
+import PilotSection from '../components/PilotSection'
+import Footer from '../components/Footer'
 
 function AccessSection() {
   return (
@@ -284,6 +286,8 @@ export default function Home() {
       <ConfidenceSection />
       <WhySection />
       <HelpSection />
+      <PilotSection />
+      <Footer />
     </div>
   )
 }
