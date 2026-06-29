@@ -2,17 +2,14 @@ export default function PilotSection() {
   return (
     <section className="pilot-section">
       <div className="container">
-        <div className="pilot-wrapper">
-          
-          {/* Left Image */}
-          <div className="pilot-image">
-            <img src="/assets/images/pilotsection.png" alt="Pilot cohort" />
-          </div>
-
-          {/* Right Content */}
+        
+          {/* Right Content Card */}
           <div className="pilot-content">
             <p className="pilot-subtitle">
-              <i className="fa-regular fa-paper-plane" aria-hidden="true"></i>
+              <i
+                className="fa-regular fa-paper-plane"
+                aria-hidden="true"
+              ></i>
               Current Pilot
             </p>
 
@@ -29,7 +26,7 @@ export default function PilotSection() {
             <a href="#" className="pilot-btn">
               Express Your Interest
             </a>
-          </div>
+        
 
         </div>
       </div>

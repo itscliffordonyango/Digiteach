@@ -867,52 +867,70 @@ body {
    PILOT SECTION
 */
 .pilot-section {
-    padding: 100px 0 0;
-    background: white;
+    min-height: 650px;
+    padding: 0;
+    background: url('/assets/images/pilotsection.png') center center / cover no-repeat;
+
+    display: flex;
+    align-items: stretch;
 }
 
-.pilot-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    overflow: hidden;
-}
-
-.pilot-image img {
+/* CONTAINER  HEIGHT */
+.pilot-section .container {
+    display: flex;
+    align-items: stretch;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
+/* GREEN CONTENT CARD */
 .pilot-content {
     background: #2D8B84;
-    padding: 80px 60px;
+    width: 50%;
+    height: 100%;          /* matches section height */
+    min-height: 650px;
+
+    margin-left: auto;
+
+    padding: 0 60px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    position: relative;
+    z-index: 2;
 }
 
+/* SUBTITLE */
 .pilot-subtitle {
     color: #B7E36A;
     font-family: 'Caveat', cursive;
     font-size: 2rem;
     margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .pilot-subtitle i {
-    margin-right: 10px;
+    font-size: 1.6rem;
 }
 
+/* TITLE */
 .pilot-content h2 {
     font-size: 3rem;
     color: white;
     line-height: 1.4;
     margin-bottom: 25px;
+    font-weight: 700;
 }
 
 .pilot-content h2 span {
     color: #B7E36A;
 }
 
+/* PARAGRAPH */
 .pilot-content p {
     color: rgba(255,255,255,0.9);
     font-size: 20px;
@@ -920,23 +938,54 @@ body {
     margin-bottom: 40px;
 }
 
+/* BUTTON */
 .pilot-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     width: fit-content;
     padding: 14px 34px;
+
     border: 2px solid white;
     border-radius: 40px;
+
     color: white;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.3s ease;
+
+    transition: all 0.3s ease;
 }
 
 .pilot-btn:hover {
     background: #1d3563;
     border-color: #1d3563;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .pilot-section {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .pilot-section .container {
+        display: block;
+    }
+
+    .pilot-content {
+        width: 100%;
+        min-height: auto;
+        padding: 50px 35px;
+    }
+
+    .pilot-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .pilot-content p {
+        font-size: 17px;
+    }
 }
 
 /* 
