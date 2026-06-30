@@ -1,4 +1,4 @@
-# DigiTeach (React + Vite)
+# DigiTeach
 
 ## Prerequisites
 - Node.js (LTS recommended)
