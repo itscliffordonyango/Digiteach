@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiTeach</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/digiteach.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<section class="top-bar">
+    <div class="container-fluid px-4">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+
+            <div class="left-contact d-flex gap-3 flex-wrap">
+                <span><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</span>
+                <span><i class="fa-regular fa-envelope"></i> support@digiteach.org</span>
+            </div>
+
+            <div class="right-contact d-flex align-items-center gap-3">
+                <span><i class="fa-solid fa-phone"></i> +254 700 111 222</span>
+
+                <div class="social-box">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
+
+       <!-- Logo -->
+<a class="navbar-brand logo-wrapper" href="#">
+
+    <div class="logo-container">
+
+        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 150" role="img" aria-labelledby="logo-title">
+            <title id="logo-title">DIGITEACH Logo</title>
+
+            <!-- LOGO ICON -->
+            <g transform="translate(10,0)">
+
+                <!-- Base nodes -->
+                <circle cx="90" cy="115" r="2" fill="#1A2B4C"/>
+                <circle cx="65" cy="125" r="3" fill="#3D8B7A"/>
+                <circle cx="115" cy="125" r="3" fill="#3D8B7A"/>
+                <circle cx="45" cy="105" r="2.5" fill="#1A2B4C"/>
+                <circle cx="135" cy="105" r="2.5" fill="#1A2B4C"/>
+
+                <path d="M45 105 A50 50 0 0 0 135 105" fill="none" stroke="#1A2B4C" stroke-width="1.5" stroke-dasharray="3,3"/>
+                <path d="M65 125 Q90 100 115 125" fill="none" stroke="#3D8B7A" stroke-width="1"/>
+                <path d="M45 105 L65 125 L90 115 L115 125 L135 105" fill="none" stroke="#1A2B4C" stroke-width="0.75"/>
+                <path d="M90 115 L90 90" fill="none" stroke="#1A2B4C" stroke-width="1.5"/>
+
+                <!-- Book -->
+                <path d="M90 95 Q65 75 30 85 L30 55 Q65 45 90 65 Z"
+                      fill="none" stroke="#1A2B4C" stroke-width="4.5" stroke-linejoin="round"/>
+
+                <path d="M90 95 Q115 75 150 85 L150 55 Q115 45 90 65 Z"
+                      fill="none" stroke="#1A2B4C" stroke-width="4.5" stroke-linejoin="round"/>
+
+                <!-- Leaves -->
+                <path d="M90 85 C70 75 55 50 65 35 C80 45 85 65 90 85 Z" fill="#4AA785"/>
+                <path d="M90 85 C110 75 125 50 115 35 C100 45 95 65 90 85 Z" fill="#3D8B7A"/>
+
+                <!-- Bulb -->
+                <path d="M80 32 C70 32 68 15 90 15 C112 15 110 32 100 32 L97 40 L83 40 Z"
+                      fill="none" stroke="#3D8B7A" stroke-width="3"/>
+
+                <!-- Outer arch -->
+                <path d="M40 70 A58 58 0 1 1 140 70"
+                      fill="none"
+                      stroke="#3D8B7A"
+                      stroke-width="2.5"
+                      stroke-dasharray="180 20 10 20"
+                      stroke-linecap="round"/>
+            </g>
+
+            <!-- TEXT -->
+            <text x="185" y="92"
+                  font-family="Inter, sans-serif"
+                  font-size="62"
+                  font-weight="700"
+                  fill="#3D8B7A">
+                DIGI
+            </text>
+
+            <text x="322" y="92"
+                  font-family="Inter, sans-serif"
+                  font-size="62"
+                  font-weight="800"
+                  fill="#1A2B4C">
+                TEACH
+            </text>
+
+        </svg>
+
+    </div>
+
+</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+            <ul class="navbar-nav gap-4 text-center">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">DigiTeach</a></li>
+                <li class="nav-item"><a class="nav-link text-success" href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <a href="#" class="btn get-btn d-none d-lg-inline-flex">
+            Get Involved <i class="fa-solid fa-arrow-right ms-2"></i>
+        </a>
+
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-section">
+
+    <div class="hero-wrapper container">
+
+        <!-- LEFT -->
+        <div class="hero-left">
+
+            <p class="hero-tagline">Because access alone isn’t enough.</p>
+
+            <h1>
+                Turning <br>
+                Digital <span><s style="text-decoration-thickness: 0.4rem;">Access</s></span> <br>
+                Digital <span class="highlight" style="color: rgb(5, 202, 5);">Confidence</span>
+
+            </h1>
+
+            <p class="hero-description">
+                Helping teachers and communities build practical digital skills, online safety awareness and everyday confidence with technology.
+            </p>
+
+            <!-- HERO BUTTONS (kept but FIXED spacing) -->
+            <div class="hero-buttons">
+                <a href="#" class="hero-btn primary">Explore DigiTeach <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+
+                <a href="#" class="hero-btn outline">Get Involved <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero-right" aria-hidden="true">
+
+            <div class="hero-image-grid">
+
+                <div class="hero-main-image">
+                    <img src="assets/images/home-bg.png" alt="Students learning">
+                </div>
+
+                <div class="hero-side-image">
+                    <img src="assets/images/home-bg-R.png" alt="Students learning">
+                </div>
+
+                <div class="hero-bottom-image">
+                    <img src="assets/images/home-bg-Bottom.png" alt="Students learning">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="programme-card-section container">
+    <div class="programme-card">
+
+        <div class="programme-left">
+            <p class="programme-label">OUR FLAGSHIP PROGRAMME</p>
+            <br>
+            <h2 style="font-size: 40px;">DigiTeach</h2>
+        </div>
+
+        <div class="programme-middle">
+            <p style="font-size: 20px; ">
+                Practical digital confidence for teachers — our flagship programme 
+                supporting educators to build digital confidence in classrooms and communities.
+            </p>
+        </div>
+
+        <div class="programme-right">
+            <a href="#" class="programme-btn">
+                See what Teachers Learn
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- ACCESS SECTION -->
+<section class="access-section">
+    <div class="container">
+
+        <div class="access-wrapper">
+
+            <!-- LEFT IMAGES -->
+            <div class="access-images">
+
+                <!-- Floating label -->
+                <div class="teach-label">
+                    Each One <span>Teach</span> One
+                </div>
+
+                <!-- Main image -->
+                <div class="access-main-image">
+                    <img src="assets/images/centre.png" alt="Student learning">
+                </div>
+
+                <!-- Top image -->
+                <div class="access-top-image">
+                    <img src="assets/images/top-right.png" alt="Teacher helping student">
+                </div>
+
+                <!-- Bottom image -->
+                <div class="access-bottom-image">
+                    <img src="assets/images/bottom-left.png" alt="Community learning">
+                </div>
+
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="access-content">
+
+                <p class="access-subtitle">
+                    <i class="fa-solid fa-check"></i>
+                    About the Initiative
+                </p>
+
+                <h2>
+                    Access is not enough. <br>
+                    The real goal is <br>
+                    confidence.
+                </h2>
+
+                <p>
+                    The Digital Confidence Initiative helps teachers and
+                    communities move from digital access to digital
+                    confidence — through practical training, online safety
+                    education and community-led support.
+                </p>
+
+                <!-- Navigation -->
+                <div class="access-navigation">
+                    <a href="#" class="btn get-btn d-none d-lg-inline-flex">
+            Learn more <i class="fa-solid fa-arrow-right ms-2"></i>
+        </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONFIDENCE AREAS SECTION -->
+<section class="confidence-section">
+    <div class="container confidence-card">
+
+        <!-- Header -->
+        <div class="confidence-header">
+
+            <div class="confidence-title">
+                <p class="confidence-subtitle">
+                    <i class="fa-solid fa-check"></i>
+                    What Teachers Learn
+                </p>
+
+                <h2>
+                    4 Practical Areas of <br>
+                    <span>Confidence</span>
+                </h2>
+
+                <p>
+                    Plain-language skills teachers can use the same day —
+                    in the classroom, in admin, and in everyday life.
+                </p>
+            </div>
+
+            <a href="#" class="learn-more-btn">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <!-- Cards -->
+        <div class="confidence-grid">
+
+            <div class="confidence-item">
+                <div class="confidence-icon">
+                    <i class="fa-solid fa-computer"></i>
+                </div>
+
+                <div class="confidence-badge">Area - 01</div>
+
+                <h4>Digital Foundations</h4>
+
+                <p>
+                    Computer basics, mouse and keyboard use, typing practice,
+                    files, folders, naming, saving, opening and finding documents.
+                </p>
+            </div>
+
+            <div class="confidence-item">
+                <div class="confidence-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <div class="confidence-badge">Area - 02</div>
+
+                <h4>Internet, Email & Cloud</h4>
+
+                <p>
+                    Browsers, Gmail, passwords, downloads,
+                    attachments, uploads and Google Drive.
+                </p>
+            </div>
+
+            <div class="confidence-item">
+                <div class="confidence-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div class="confidence-badge">Area - 03</div>
+
+                <h4>Teacher Productivity</h4>
+
+                <p>
+                    Google Docs, Sheets, Slides and classroom tools
+                    for reports, attendance and teaching.
+                </p>
+            </div>
+
+            <div class="confidence-item">
+                <div class="confidence-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div class="confidence-badge">Area - 04</div>
+
+                <h4>Digital Safety</h4>
+
+                <p>
+                    Scams, phishing, fake links, misinformation,
+                    password hygiene and safer online behavior.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- WHY IT MATTERS -->
+<section class="why-section">
+    <div class="container">
+
+        <p class="why-subtitle">
+            <i class="fa-solid fa-check"></i>
+            Why This Matters
+        </p>
+
+        <h2>
+            Access is growing. <br>
+            Confidence hasn’t kept pace
+        </h2>
+
+        <div class="why-grid">
+
+            <!-- Access Card -->
+            <div class="why-card dark-card">
+                <h3>Access</h3>
+
+                <p>
+                    Phones, devices, online services and platforms are
+                    everywhere — but they sit unused or feel risky.
+                </p>
+
+                <ul>
+                    <li>"I have a laptop but I'm afraid to touch it."</li>
+                    <li>"I can't tell which links are scams."</li>
+                    <li>"I lose files and forget passwords."</li>
+                </ul>
+            </div>
+
+            <!-- Arrow -->
+            <div class="why-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <!-- Confidence Card -->
+            <div class="why-card green-card">
+                <h3>Confidence</h3>
+
+                <p>
+                    The same tools become practical, safe and
+                    independent — for teaching, work and everyday life.
+                </p>
+
+                <ul>
+                    <li>Prepares lesson notes and reports in Docs.</li>
+                    <li>Spots scams and stays safe online.</li>
+                    <li>Helps colleagues, learners and family.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FIND HELP SECTION -->
+<section class="help-section">
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="help-header">
+
+            <p class="help-subtitle">
+                <i class="fa-solid fa-hand-pointer"></i>
+                How to Get Involved
+            </p>
+
+            <h2>Find your way to help</h2>
+
+            <p class="help-description">
+                One simple form routes you to the right pathway — whoever you are.
+            </p>
+
+        </div>
+
+        <!-- CARDS -->
+        <div class="help-cards">
+
+            <!-- CARD 1 -->
+            <div class="help-card">
+                <div class="help-card-image">
+                    <img src="/assets/images/join.png" alt="Join as a Teacher">
+                </div>
+
+                <h3>Join as a Teacher</h3>
+
+                <p>
+                    Participate in a future cohort or recommend it to your school
+                </p>
+
+                <a href="#" class="help-btn">Join Today</a>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="help-card">
+                <div class="help-card-image">
+                    <img src="assets/images/help-host.jpg" alt="Host a Cohort">
+                </div>
+
+                <h3>Host a Cohort</h3>
+
+                <p>
+                    Offer a space, computers, internet and local coordination
+                </p>
+
+                <a href="#" class="help-btn">Start Hosting</a>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="help-card">
+                <div class="help-card-image">
+                    <img src="assets/images/help-volunteer.jpg" alt="Volunteer">
+                </div>
+
+                <h3>Volunteer as a Fellow</h3>
+
+                <p>
+                    Support facilitation, curriculum safety content or documentation
+                </p>
+
+                <a href="#" class="help-btn">Join The Team</a>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="help-card">
+                <div class="help-card-image">
+                    <img src="assets/images/help-partner.jpg" alt="Partner">
+                </div>
+
+                <h3>Partner with Us</h3>
+
+                <p>
+                    Support implementation, infrastructure research or funding
+                </p>
+
+                <a href="#" class="help-btn">Reach Out</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
