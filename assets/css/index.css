@@ -826,8 +826,8 @@ CONFIDENCE SECTION
     position:relative;
 
     background:
-        url("/assets/images/home/confidence/bg-left.png") left center / 50% 100% no-repeat,
-        url("/assets/images/home/confidence/bg-right.png") right center / 50% 100% no-repeat;
+        url("assets/images/home/confidence/bg-left.png") left center / 50% 100% no-repeat,
+        url("assets/images/home/confidence/bg-right.png") right center / 50% 100% no-repeat;
 
     background-color:#F8F8F8;
 }
@@ -848,7 +848,7 @@ CONFIDENCE SECTION
 
     height:650px;
 
-    background:url("/assets/images/home/confidence/bg-left.png") no-repeat left center;
+    background:url("assets/images/home/confidence/bg-left.png") no-repeat left center;
 
     background-size:contain;
 
@@ -870,7 +870,7 @@ CONFIDENCE SECTION
 
     height:650px;
 
-    background:url("/assets/images/home/confidence/bg-right.png") no-repeat right center;
+    background:url("assets/images/home/confidence/bg-right.png") no-repeat right center;
 
     background-size:contain;
 
@@ -1809,7 +1809,7 @@ ABOUT HERO
 
     height:420px;
 
-    background:url("/assets/images/pilot/pilot.png") center center/cover no-repeat;
+    background:url("assets/images/pilot/pilot.png") center center/cover no-repeat;
 
     display:flex;
     justify-content:center;
@@ -2500,7 +2500,7 @@ display:none;
     align-items:center;
 
     background:
-        url("/assets/images/programmes/hero/hero.png")
+        url("assets/images/programmes/hero/hero.png")
         center center/cover no-repeat;
 
     overflow:hidden;
@@ -2873,7 +2873,7 @@ display:none;
 
 .contact-hero{
     height:420px;
-    background:url("/assets/images/contact/hero/bg.png") center center/cover no-repeat;
+    background:url("assets/images/contact/hero/bg.png") center center/cover no-repeat;
     position:relative;
     display:flex;
     justify-content:center;
@@ -3103,7 +3103,7 @@ display:none;
 /* Hero */
 .involved-hero{
     height:380px;
-    background:url("/assets/images/involved/get-bg.png") center/cover no-repeat;
+    background:url("assets/images/involved/get-bg.png") center/cover no-repeat;
     position:relative;
     display:flex;
     justify-content:center;
