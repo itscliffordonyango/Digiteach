@@ -1,3 +1,40 @@
+/* ============================================================
+   GLOBAL RESPONSIVE FOUNDATION
+============================================================ */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    max-width: 100%;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+    max-width: 100%;
+}
+
+.container {
+    width: min(90%, 1250px);
+    margin-inline: auto;
+}
+
+
 /* ==========================
         RESET
 ========================== */
@@ -627,7 +664,7 @@ ABOUT SECTION
 
     top:0;
 
-    left:-1.5;
+    left:0;
 
     background:#18345D;
 
@@ -672,7 +709,7 @@ ABOUT SECTION
 }
 
 .img-top{
-    padding top: 50px;
+    padding-top: 50px;
     position:absolute;
 
     top:20px;
@@ -1439,13 +1476,14 @@ font-size:42px;
     background:#fff;
 
     color:#2d8b84;
-}.section-heading h2{
+}
+.section-heading h2{
 
 font-size:42px;
 
 }
 
-}
+
 
 @media(max-width:768px){
 
@@ -1480,13 +1518,16 @@ padding:80px 0;
 
 }
 
-.pilot-image img{
+.pilot-image {
+    width: 100%;
+    overflow: hidden;
+}
 
-    width:auto;
-    height:100%;
-    object-fit:cover;
-    display:block;
-
+.pilot-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .pilot-content{
