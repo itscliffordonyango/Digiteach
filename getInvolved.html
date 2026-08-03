@@ -189,14 +189,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 Express Your <span>Interest</span>
             </h2>
 
-            <form class="get-involved-form">
+<form class="get-involved-form" id="getInvolvedForm">
+
+                <input type="hidden" name="source" value="Get Involved Form">
 
                 <div class="get-involved-input-group">
 
                     <label>I am... <span>*</span></label>
 
-                    <select class="get-involved-select">
-                        <option>Choose the option that best describes you</option>
+                    <select class="get-involved-select" name="iam" required>
+                        <option value="">Choose the option that best describes you</option>
                         <option>Teacher</option>
                         <option>Volunteer</option>
                         <option>School</option>
@@ -215,7 +217,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                         <label>Full Name <span>*</span></label>
 
                         <input type="text"
-                               placeholder="Enter your name">
+                               name="fullName"
+                               placeholder="Enter your name" required>
 
                     </div>
 
@@ -224,7 +227,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                         <label>Email <span>*</span></label>
 
                         <input type="email"
-                               placeholder="Enter your email">
+                               name="email"
+                               placeholder="Enter your email" required>
 
                     </div>
 
@@ -238,7 +242,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                         <label>Phone Number <span>*</span></label>
 
                         <input type="text"
-                               placeholder="+254 ...">
+                               name="phone"
+                               placeholder="+254 ..." required>
 
                     </div>
 
@@ -247,6 +252,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                         <label>Location / County</label>
 
                         <input type="text"
+                               name="location"
                                placeholder="eg. Nairobi">
 
                     </div>
@@ -259,6 +265,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                     <label>Organization / School</label>
 
                     <input type="text"
+                           name="organization"
                            placeholder="If applicable">
 
                 </div>
@@ -268,14 +275,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
                     <label>Message</label>
 
-                    <textarea placeholder="Anything you'd like us to know"></textarea>
+                    <textarea name="message"
+                              placeholder="Anything you'd like us to know"></textarea>
 
                 </div>
 
 
                 <div class="get-involved-checkbox">
 
-                    <input type="checkbox">
+                    <input type="checkbox" name="consent">
 
                     <label>
                         I give permission for the Digital Confidence Initiative
@@ -285,7 +293,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 </div>
 
 
-                <button class="get-involved-btn">
+                <button type="submit" class="get-involved-btn">
                     Submit
                 </button>
 
@@ -389,6 +397,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </div>
 
 </footer>
+
+<script src="assets/js/script.js" defer></script>
 
 </body>
 </html>

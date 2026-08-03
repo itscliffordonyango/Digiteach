@@ -233,23 +233,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
     <div class="contact-form">
 
-        <h2>Reach Out To Us</h2>
+<h2>Reach Out To Us</h2>
 
-        <form>
+        <form id="contactForm">
+
+            <input type="hidden" name="source" value="Contact Form">
 
             <label>Full Name <span>*</span></label>
-            <input type="text" placeholder="Enter your name">
+            <input type="text" name="fullName" id="contactName" placeholder="Enter your name" required>
 
             <label>Email <span>*</span></label>
-            <input type="email" placeholder="Enter your email">
+            <input type="email" name="email" id="contactEmail" placeholder="Enter your email" required>
 
             <label>Phone Number</label>
-            <input type="text" placeholder="+254 ...">
+            <input type="text" name="phone" id="contactPhone" placeholder="+254 ...">
 
             <label>Message</label>
-            <textarea placeholder="Anything you'd like us to know"></textarea>
+            <textarea name="message" id="contactMessage" placeholder="Anything you'd like us to know"></textarea>
 
-            <button>Submit</button>
+            <button type="submit">Submit</button>
 
         </form>
 
@@ -352,6 +354,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </div>
 
 </footer>
+
+<script src="assets/js/script.js" defer></script>
 
 </body>
 </html>
